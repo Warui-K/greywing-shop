@@ -4,15 +4,13 @@
  */
 ?>
 
-    <div class="site-section bg-image overlay"
-    style="background-image: url('<?php echo get_theme_mod('gr_service_bg_about');?>');">
-    <div class="container">
-        <div class="row justify-content-center text-center">
-        <h1 class="mb-0 text-white"><?php the_title();?></h1>
+<section class="ftco-section ftco-no-pb ftco-no-pt bg-secondary">
+      <div class="container py-3">
+	  <div class="row justify-content-center text-center">
+        <h1 class="mb-0 text-white"><?php echo get_the_title( );?></h1>
 
         </div>
-    </div>
-</div>
+      </section>
 
 <div class="bg-light py-3 px-6">
     <div class="container">

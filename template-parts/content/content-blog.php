@@ -7,8 +7,8 @@
 <div class="site-section bg-image overlay"
     style="background-image: url('<?php echo get_theme_mod('gr_service_bg_about');?>');">
     <div class="container">
-        <div class="row justify-content-center text-center">
-        <h1 class="mb-0"><?php the_title();?></h1>
+    <div class="row justify-content-center text-center">
+        <h1 class="mb-0 text-white"><?php the_title();?></h1>
 
         </div>
     </div>

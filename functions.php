@@ -17,15 +17,16 @@ add_filter( 'excerpt_length', 'gr_set_excerpt_length', 999);
 
 
 //Woocommerce and woo-setup files
-//add_action( 'after_setup_theme', 'gr_add_woocommerce_support' );
-remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
-remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
-add_action('woocommerce_before_main_content', 'gr_wrapper_start', 10);
-add_action('woocommerce_after_main_content', 'gr_wrapper_end', 10);
+
+//Woocommerce
+add_theme_support('woocommerce');
+add_filter( 'woocommerce_add_to_cart_fragments', 'wc_refresh_mini_cart_count');
+
+
 add_theme_support( 'wc-product-gallery-zoom' );
 add_theme_support( 'wc-product-gallery-lightbox' );
 add_theme_support( 'wc-product-gallery-slider' );
 add_filter( 'woocommerce_add_to_cart_fragments', 'gr_wc_refresh_mini_cart_count');
-
+remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
 
 
